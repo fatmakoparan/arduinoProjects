@@ -8,21 +8,20 @@ The project features a flip-flop circuit setup where two LEDs blink in an altern
 The circuit is constructed on a breadboard using an Arduino UNO, two LEDs, two 220-ohm resistors, and jumper wires. One LED is connected to pin 10 and the other to pin 9. Resistors are connected to the long leg (anode) of each LED to limit the current and prevent the LEDs from burning out.
 
 ## Code Explanation
-'''c
+```c
 void setup() {
- pinMode(10,OUTPUT);
- pinMode(9,OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
 }
 
 void loop() {
-   digitalWrite(10,HIGH);
-   digitalWrite(9,LOW);
-   delay(200);
-   digitalWrite(9,HIGH);
-   digitalWrite(10,LOW);
-   delay(200);
+  digitalWrite(10, HIGH);
+  digitalWrite(9, LOW);
+  delay(200);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  delay(200);
 }
-
 ## Setup
 
 To run this project on your system, follow these steps:
