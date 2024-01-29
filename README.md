@@ -1,16 +1,16 @@
 Simple Arduino LED Blink Project
+
 This repository contains a simple electronic circuit project that uses an Arduino UNO to alternate blinking two LEDs, along with the corresponding code.
 
 Project Description
+
 The project features a flip-flop circuit setup where two LEDs blink in an alternating pattern. When one LED is on, the other is off, and this alternation continues cyclically. The process is controlled through the digital pins of the Arduino.
 
 Circuit Diagram
 The circuit is constructed on a breadboard using an Arduino UNO, two LEDs, two 220-ohm resistors, and jumper wires. One LED is connected to pin 10 and the other to pin 9. Resistors are connected to the long leg (anode) of each LED to limit the current and prevent the LEDs from burning out.
 
 
-Code Explanation
-c
-Copy code
+Code Explanation 
 void setup() {
  pinMode(10,OUTPUT);
  pinMode(9,OUTPUT);
